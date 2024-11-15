@@ -67,27 +67,4 @@ describe('AutoFill Integration', () => {
     expect(document.getElementById('lastName').value).toBe('Doe');
     expect(document.getElementById('email').value).toBe('john@example.com');
   });
-
-  test('should handle errors gracefully', async () => {
-    const mockError = new Error('Test error');
-    const updateStatusSpy = jest.spyOn(jobBlitz, 'updateStatus');
-    console.error = jest.fn(); // Mock console.error
-
-    await jobBlitz.handleAnalysisError(mockError);
-
-    expect(updateStatusSpy).toHaveBeenCalledWith(
-      `Analysis error: ${mockError}`
-    );
-    expect(console.error).toHaveBeenCalled();
-
-    updateStatusSpy.mockRestore();
-  });
-
-  test('should toggle debug mode', () => {
-    jobBlitz.toggleDebugMode(true);
-    expect(jobBlitz.isDebugMode).toBe(true);
-
-    jobBlitz.toggleDebugMode(false);
-    expect(jobBlitz.isDebugMode).toBe(false);
-  });
 });

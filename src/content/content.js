@@ -1,10 +1,10 @@
 import { FormAnalyzer } from '../utils/form-analyzer.js';
 import { DebugOverlay } from '../utils/debug-overlay.js';
 
-export default class JobBlitzContent {
+export default class NexaApply {
   constructor() {
     this.setupMessageListeners();
-    console.log('JobBlitz Content Script Initialized');
+    console.log('nexaApply Content Script Initialized');
   }
 
   setupMessageListeners() {
@@ -177,4 +177,4 @@ export default class JobBlitzContent {
 }
 
 // Initialize content script
-const jobBlitz = new JobBlitzContent();
+const nexaApply = new NexaApply();

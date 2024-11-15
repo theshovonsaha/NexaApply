@@ -7,7 +7,7 @@ console.log('Service Worker Initialized');
 
 // Initialize extension
 chrome.runtime.onInstalled.addListener(async () => {
-  console.log('JobBlitz installed');
+  console.log('NexaApply installed');
 
   // Set default settings
   chrome.storage.local.get(['settings'], function (result) {
@@ -166,7 +166,7 @@ setInterval(() => {
 
 // Add after line 6
 chrome.runtime.onStartup.addListener(() => {
-  console.log('JobBlitz starting up');
+  console.log('nexaApply starting up');
   activeJobs.clear();
 });
 

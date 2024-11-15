@@ -2,17 +2,16 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
+  mode: 'production',
   entry: {
     background: './src/background/background.js',
-    content: './src/content/content.js',
     popup: './src/popup/popup.js',
+    content: './src/content/content.js',
+    options: './src/options/options.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]/[name].js',
-    clean: true,
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -22,18 +21,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  targets: {
-                    chrome: '88',
-                  },
-                },
-              ],
-            ],
+            presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
@@ -41,16 +35,10 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/manifest.json', to: 'manifest.json' },
-        { from: 'src/popup', to: 'popup' },
-        { from: 'src/options', to: 'options' },
-        { from: 'assets/styles', to: 'assets/styles' },
+        { from: 'src/popup/popup.html', to: 'popup.html' },
+        { from: 'src/options/options.html', to: 'options.html' },
+        { from: 'src/assets', to: 'assets' },
       ],
     }),
   ],
-  resolve: {
-    extensions: ['.js'],
-  },
-  optimization: {
-    minimize: false,
-  },
 };

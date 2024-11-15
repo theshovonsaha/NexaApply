@@ -1,8 +1,9 @@
-# JobBlitz API Documentation
+# nexaApply API Documentation
 
 ## Content Script API
 
 ### FormAnalyzer
+
 ```javascript
 class FormAnalyzer {
     async detectFields()
@@ -15,6 +16,7 @@ class FormAnalyzer {
 ```
 
 ### DebugOverlay
+
 ```javascript
 class DebugOverlay {
     show()
@@ -27,6 +29,7 @@ class DebugOverlay {
 ## AI Integration API
 
 ### MistralAI
+
 ```javascript
 class MistralAI {
     async analyzeForm(formData)
@@ -38,13 +41,16 @@ class MistralAI {
 ## Message Types
 
 ### Background to Content Script
+
 - ANALYSIS_COMPLETE
 - ANALYSIS_ERROR
 
 ### Content Script to Background
+
 - ANALYZE_FORM
 - UPDATE_STATUS
 
 ### Popup to Content Script
+
 - START_AUTOFILL
 - TOGGLE_DEBUG

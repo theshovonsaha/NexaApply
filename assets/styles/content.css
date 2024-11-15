@@ -1,26 +1,26 @@
-.jobblitz-highlight {
+.nexaApply-highlight {
     outline: 2px solid #2563eb !important;
     outline-offset: 2px !important;
 }
 
-.jobblitz-filled {
+.nexaApply-filled {
     background-color: rgba(37, 99, 235, 0.1) !important;
 }
 
-.jobblitz-error {
+.nexaApply-error {
     outline: 2px solid #ef4444 !important;
     outline-offset: 2px !important;
 }
 
-#jobblitz-debug::-webkit-scrollbar {
+#nexaApply-debug::-webkit-scrollbar {
     width: 6px;
 }
 
-#jobblitz-debug::-webkit-scrollbar-track {
+#nexaApply-debug::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.1);
 }
 
-#jobblitz-debug::-webkit-scrollbar-thumb {
+#nexaApply-debug::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }

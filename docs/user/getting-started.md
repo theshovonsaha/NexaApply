@@ -1,8 +1,8 @@
-# Getting Started with JobBlitz
+# Getting Started with nexaApply
 
 ## Installation
 
-1. Install JobBlitz from the Chrome Web Store
+1. Install nexaApply from the Chrome Web Store
 2. Click the extension icon to open settings
 3. Enter your Mistral AI API key
 4. Configure your profile details
@@ -10,7 +10,7 @@
 ## Quick Start
 
 1. Navigate to any job application
-2. Click the JobBlitz icon
+2. Click the nexaApply icon
 3. Select "Auto-Fill Form"
 4. Review and submit!
 

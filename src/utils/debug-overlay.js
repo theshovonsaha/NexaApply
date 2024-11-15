@@ -7,7 +7,7 @@ export class DebugOverlay {
 
   createContainer() {
     this.container = document.createElement('div');
-    this.container.id = 'jobblitz-debug';
+    this.container.id = 'nexaApply-debug';
     this.container.style.cssText = `
         position: fixed;
         bottom: 20px;
@@ -73,7 +73,7 @@ export class DebugOverlay {
     
     this.container.innerHTML = \`
       <div style="margin-bottom: 10px; border-bottom: 1px solid #666; padding-bottom: 5px;">
-        JobBlitz Debug Console
+        nexaApply Debug Console
         <span style="float: right; cursor: pointer;" onclick="this.parentElement.parentElement.style.display='none'">x</span>
       </div>
       <div class="debug-log">

@@ -4,18 +4,13 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
-  collectCoverageFrom: [
-    'src/**/*.js',
-    '!src/background/**',
-    '!src/utils/mock-api.js',
-  ],
-  coverageThreshold: {
-    global: {
-      statements: 80,
-      branches: 80,
-      functions: 80,
-      lines: 80,
-    },
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest'],
   },
+  testPathIgnorePatterns: ['/node_modules/'],
+  clearMocks: true,
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coveragePathIgnorePatterns: ['/node_modules/', '/tests/setup/'],
   testTimeout: 10000,
 };

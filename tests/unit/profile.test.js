@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals';
-import '../setup/chrome-mock';
+import '@testing-library/jest-dom';
 import { validateProfile } from '../../src/options/profile.js';
 
 describe('Profile Management', () => {

@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "JobBlitz",
+    "name": "nexaApply",
     "version": "1.0.0",
     "permissions": [
         "activeTab",

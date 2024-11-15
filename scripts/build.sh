@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Build script for JobBlitz
-echo "Building JobBlitz..."
+# Build script for nexaApply
+echo "Building nexaApply..."
 
 # Clean dist directory
 rm -rf dist/
@@ -26,6 +26,6 @@ cp docs/user/privacy-policy.md dist/store-assets/
 # Create zip for Chrome Web Store
 echo "Creating extension package..."
 cd dist
-zip -r ../jobblitz-extension.zip ./*
+zip -r ../nexaApply-extension.zip ./*
 
-echo "Build complete! Package created at jobblitz-extension.zip"
+echo "Build complete! Package created at nexaApply-extension.zip"
