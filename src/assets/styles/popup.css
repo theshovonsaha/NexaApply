@@ -1,0 +1,115 @@
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.primary-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #45a049;
+}
+
+.status-message {
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.status-message.info {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.status-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.status-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.help-text {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.primary {
+  background: #0066ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: white;
+  border: 1px solid #0066ff;
+  color: #0066ff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.secondary.active {
+  background: #0066ff;
+  color: white;
+}
+
+.status-panel {
+  margin-top: 16px;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+#statusLog {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+ 

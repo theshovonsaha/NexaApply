@@ -121,6 +121,22 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.env.local
+.env.development
+.env.test
+.env.production
+.env
+.DS_Store
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Editor backup files
+*~
+*.swp
+*.swo
 
 # yarn v2
 .yarn/cache
